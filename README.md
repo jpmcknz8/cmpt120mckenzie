@@ -1,3 +1,3 @@
 # cmpt120mckenzie
- Lab work for Introduction to Programming
- 
+Introduction to Programming- Lab Activities 
+This repository contains all my work for Lab Activities 
