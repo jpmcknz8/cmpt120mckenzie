@@ -5,8 +5,8 @@
 
 def findName():
     # get user's first and last names
-    first = input("Enter your first name: ")
-    last = input("Enter your last name: ")
+    first = input("Enter your first name: ").lower()
+    last = input("Enter your last name: ").lower()
     fullname = (first + "." + last)
     fullname.split(".")
     return(fullname)
@@ -20,6 +20,10 @@ def createUsername(name):
 def findStrength():
     
     password = input("Create a new password: ")
+    if passwordLetters(password):
+        print("Valid Password")
+    else:
+        print("Add Upper and Lower case Characters")
     while len(password) < 8:
         print("Fool of a took! That password is feeble!")
         password = input("Create a new password")
@@ -30,6 +34,20 @@ def goodbye(user):
     print("Account configured. Your new email address is",
     user + "@marist.edu")
 
+def passwordLetters(password):
+    if (password.upper() != password and password.lower() != password):
+        return(True)
+    else:
+        return(False)
+    
+
+
+
+
+
+
+
+
 def main():
     # Get user's first and last names
     
@@ -38,7 +56,7 @@ def main():
     # Ask user to create a new password
     password = findStrength()
     #Tell user their final info
-    info = goodbye(user)
+    goodbye(user)
     
 main()
 
