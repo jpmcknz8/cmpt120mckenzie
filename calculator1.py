@@ -34,7 +34,7 @@ def doCalc(number1, number2, operator):
 
 def main():
    user_in = get_input()
-   number1, number2, operator = getPieces(user_in)
+   number1, number2, operator = getPieces(user_in) # JA: This assumes a single operator
    doCalc(number1,number2,operator)
 
 main()
