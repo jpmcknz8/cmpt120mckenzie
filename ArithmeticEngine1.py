@@ -12,10 +12,14 @@ def showOutro():
         print("\nPlease come back again soon!")
        
 def findNums():
-    num1 = int(input("Find the first number"))
-    num2 = int(input("Find the second number"))
-    return(num1, num2)
-
+        while True:
+            try:
+                num1 = int(input("Find the first number"))
+                num2 = int(input("Find the second number"))
+                return(num1, num2)
+            except:
+                print("Incorrect number")
+              
 def doLoop():
         while True:
                 cmd = input("What computation do you want to perform? ")
@@ -30,7 +34,15 @@ def doLoop():
                     result = num1 * num2
                 elif cmd.lower() == "div":
                     num1, num2 = findNums()
-                    result = num1 // num2
+                    
+
+                    try:
+                        result = num1 // num2
+                    except:
+                        print("Unable to divide by zero!")
+                        continue
+
+
                 elif cmd.lower() == "quit":
                     break
                 else:
