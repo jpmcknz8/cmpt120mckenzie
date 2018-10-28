@@ -1,5 +1,6 @@
 # calculator.py
 
+# JA: You need to connect the equation solving with the grqaphical interface
 from graphics import *
 
 win = GraphWin('Calculator', 400, 400)
@@ -79,7 +80,7 @@ characterdiv = drawPoint(247.5, 142.5, '/', 'white')
 charactermult = drawPoint(247.5, 192.5, '*', 'white')
 characteradd = drawPoint(247.5, 242.5, '+', 'white')
 charactersub = drawPoint(247.5, 292.5, '-', 'white')
-charcterequal = drawPoint(247.5, 342.5, '=', 'white')
+characterequal = drawPoint(247.5, 342.5, '=', 'white')
 
 character7.draw(win)
 character4.draw(win)
