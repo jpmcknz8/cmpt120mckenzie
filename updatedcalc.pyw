@@ -2,6 +2,7 @@
 # This program builds a graphical calculator keypad
 from graphics import *
 from calculator_functions import *
+# JA: Where is the claculator_functions file?
 
 def createButton(values):
     p1 = Point(values[0], values[1])
