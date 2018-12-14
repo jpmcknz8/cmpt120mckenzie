@@ -9,8 +9,7 @@ class Display:
         self.text = Text(Point(3,6),"")
         self.text.setSize(25)
         self.text.draw(win)
-        
+
     def update(self, text):
         print("update called, text = ",text)
         self.text.setText(text)
-        
